@@ -10,7 +10,7 @@ We tested the driver on Ubuntu 22.04 and ROS2 Humble. It should work with simila
 
 1. Install Manus Core on a Windows machine and upload your license to the dongle. A "Feature" license is required, otherwise you won't get message from Manus SDK.
 2. Clone the repo into a ROS2 workspace, e.g. you should have a folders like this `~/ros2_ws/src/manus_ros2` and `~/ros2_ws/src/manus_ros2_msgs`.
-3. Download [Manus SDK 2.4.0]([https://my.manus-meta.com/resources/downloads/quantum-metagloves](https://docs.manus-meta.com/2.4.0/Resources/)) and put it under the `manus_ros2` folder and rename it as ManusSDK. You should have a folders like this `~/ros2_ws/src/manus_ros2/ManusSDK/include` and `~/ros2_ws/src/manus_ros2/ManusSDK/lib`.
+3. Download [Manus SDK 2.4.0](https://docs.manus-meta.com/2.4.0/Resources/) and put it under the `manus_ros2` folder and rename it as ManusSDK. You should have a folders like this `~/ros2_ws/src/manus_ros2/ManusSDK/include` and `~/ros2_ws/src/manus_ros2/ManusSDK/lib`.
 4. Follow [this guide](https://docs.manus-meta.com/2.4.0/Plugins/SDK/Linux/#installation) to install dependencies for Manus SDK. You should follow instructions for the "core Integrated" mode.
 5. Build packages with `colcon build` and source the environment `source ~/ros2_ws/install/setup.bash`. Then run `ros2 run manus_ros2 rawdata_publisher`. Now you should see topics like `/manus_node_poses_0` and `manus_node_hierarchy_0`. There should be a pair of such topics for each glove.
 
